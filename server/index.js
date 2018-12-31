@@ -118,9 +118,7 @@ setTimeout(() => {
   //When a admin deletes a product, need an id to specify a product to delete.
   app.delete('/api/products/:id', adminController.deleteProduct);
 
-
 }, 200)
 
 //Fire it up
-app.listen(PORT);
-console.log('Listening on port 3000');
+app.listen(PORT, console.log('Listening on port 3000'));
